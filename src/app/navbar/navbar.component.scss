@@ -1,0 +1,30 @@
+nav {
+    width: 1920px;
+    height: 92px;
+    position: sticky;
+    top: 0px;
+    left: calc((100vw - 1920px) / 2);
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    margin-left: 100px;
+    font-family: 'Syne';
+}
+
+.menu-icon {
+    width: 40px;
+    height: 32px;
+    margin-right: 100px;
+}
+
+@media(max-width:1920px){
+    nav {
+        width: 100vw;
+        max-width: 100%;
+    }
+}
