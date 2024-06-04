@@ -3,6 +3,25 @@
         <span class="logo">[GH]</span>
     </div>
     <div>
-        <img class="menu-icon" src="../../assets/img/burger menu.png">
+        @if(!openedMenu){
+            <img class="menu-icon" src="../../assets/img/burger menu.png" (click)="openMenu()">
+            
+        }@else {
+            <img class="menu-icon" src="../../assets/img/menu close.png" (click)="closeMenu()">
+        }
     </div>
 </nav>
+<div class="opened-menu" [ngClass]="{'d-flex' : openedMenu}">
+    <div class="animation-cont">
+        <span class="menu-item" (mouseover)="borderAnimation()" >About me</span>
+    </div>
+    <div class="animation-cont">
+        <span class="menu-item" (mouseover)="borderAnimation()">My Skills</span>
+    </div>
+    <div class="animation-cont">
+        <span class="menu-item" (mouseover)="borderAnimation()">Portfolio</span>
+    </div>
+    <div class="animation-cont">
+        <span class="menu-item" (mouseover)="borderAnimation()">de | en</span> 
+    </div>
+</div>

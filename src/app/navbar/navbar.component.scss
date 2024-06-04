@@ -14,12 +14,46 @@ nav {
     font-size: 36px;
     margin-left: 100px;
     font-family: 'Syne';
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .menu-icon {
     width: 40px;
     height: 32px;
     margin-right: 100px;
+    cursor: pointer;
+}
+
+.opened-menu {
+    position: fixed;
+    top: 100;
+    width: 100vw;
+    max-width: 1920px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.menu-item {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 96px;
+    cursor: pointer;
+}
+
+.animation-cont {
+    width: 580px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid red;
+    border-left: 10px solid red;
 }
 
 @media(max-width:1920px){
