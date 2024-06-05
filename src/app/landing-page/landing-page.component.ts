@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
+    email:string = 'hozleitergabor@gmail.com';
+
 }
