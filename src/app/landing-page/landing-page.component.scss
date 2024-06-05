@@ -1,0 +1,59 @@
+.landing-page-container {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-cont {
+    margin-bottom: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro-profession {
+    font-family: 'Syne';
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 128px;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.intro-name-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    gap: 16px;
+}
+
+.intro-name {
+    font-family: 'Overpass';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: #00BC8F;
+}
+
+.balck-line {
+    width: 550px;
+    height: 3px;
+    background-color: black;
+}
+
+.landing-page-bottom {
+    position: absolute;
+    bottom: 20px;
+    max-width: 1920px;
+    width: 100%;
+    height: 50px;
+    background-color: #00BC8F;
+}
