@@ -5,11 +5,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #00BC8F;
+    z-index: 2;
 }
 
 .intro-cont {
-    background-color: #00BC8F;
     width: 1030px;
     height: 300px;
     display: flex;
@@ -92,6 +91,15 @@
     right: calc((100vw - 1700px) / 2);
 }
 
+.arrow-cont {
+    position: absolute;
+    bottom: 100px;
+    right: calc((100vw - 1760px) / 2);
+    background-color: #00BC8F;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
 @media(max-width:1920px){
     .landing-page-bottom {
         width: 100vw;
@@ -102,6 +110,9 @@
     }
     .scroll-cont-top, .scroll-cont-bottom {
         right: 100px;
+    }
+    .arrow-cont {
+        right: 70px;
     }
 
 }
