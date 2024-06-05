@@ -8,6 +8,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .logo {
@@ -44,16 +45,19 @@ nav {
     font-weight: 700;
     font-size: 96px;
     cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .animation-cont {
     width: 580px;
-    height: 150px;
+    height: 155px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 10px solid red;
-    border-left: 10px solid red;
+    flex-direction: column;
+    position: relative;
 }
 
 @media(max-width:1920px){

@@ -19,7 +19,7 @@ export class NavbarComponent {
       this.openedMenu = false;
     }
 
-    borderAnimation(){
-      alert('sfhx');
+    borderAnimation() {
+      alert('sdfhx');
     }
 }
