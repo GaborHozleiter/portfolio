@@ -5,7 +5,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
 }
 
 .intro-cont {
@@ -95,9 +94,6 @@
     position: absolute;
     bottom: 100px;
     right: calc((100vw - 1760px) / 2);
-    background-color: #00BC8F;
-    z-index: 1;
-    margin-bottom: 50px;
 }
 
 @media(max-width:1920px){
