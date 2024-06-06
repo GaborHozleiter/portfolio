@@ -8,7 +8,7 @@
     height: 600px;
     position: absolute;
     top: 0px;
-    left: 100px;
+    left: calc((100vw - 1720px) / 2);
     gap: 52px;
     margin-top: 92px;
     display: flex;
@@ -25,6 +25,9 @@
     letter-spacing: 0.01em;
     text-align: center;
     white-space: nowrap;
+    &:hover {
+        color: #00BC8F;
+    }
 }
 
 .about-me-description {
@@ -61,10 +64,20 @@
 }
 
 .profil-img {
-    width: 600px;
-    height: 400px;
+    width: 570px;
+    height: 570px;
     object-fit: cover;
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: calc((100vw - 1720px) / 2);
+}
+
+@media(max-width:1920px){
+    .about-me-text-cont {
+        left: 100px;
+    }
+
+    .profil-img {
+        right: 100px;
+    }
 }
