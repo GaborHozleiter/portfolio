@@ -1,0 +1,70 @@
+.about-me-cont {
+    height: 100vh;
+    position: relative;
+}
+
+.about-me-text-cont {
+    width: 619px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    gap: 52px;
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-title {
+    font-family: 'Syne';
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 78px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.about-me-description {
+    font-family: 'Overpass';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;   
+}
+
+.contact-button {
+    width: 213px;
+    height: 68px;
+    padding: 20px 60px 20px 60px;
+    gap: 10px;
+    border: 4px solid #000000;
+    cursor: pointer;
+    &:hover {
+        transform: scaleX(1.2);
+        border: 6px solid #000000;
+        .button-text {
+            font-weight: 700;
+        }
+    }
+}
+
+.button-text {
+    font-family: 'Overpass';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.profil-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}

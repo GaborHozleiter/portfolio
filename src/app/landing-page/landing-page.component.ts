@@ -23,7 +23,7 @@ export class LandingPageComponent implements OnInit {
 
     xy(){
       setInterval(() => {
-        if(this.arrowNumber < 6){
+        if(this.arrowNumber < 5){
           this.arrowNumber ++;
         }else{
           this.arrowNumber = 0;
