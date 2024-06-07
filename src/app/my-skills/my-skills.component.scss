@@ -43,6 +43,7 @@
     z-index: 10;
     display: flex;
     justify-content: center;
+    cursor: default;
 }
 
 .skills-title {
@@ -61,6 +62,7 @@
 .skills-icon {
     width: 70px;
     height: 70px;
+    
 }
 
 .icon-cont {
@@ -69,8 +71,9 @@
     align-items: center;
     flex-direction: column;
     gap: 12px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
     &:hover {
         transform: rotateY(360deg);
-        //filter: drop-shadow(0 0 0.75rem #FF24BD);
     }
 }
