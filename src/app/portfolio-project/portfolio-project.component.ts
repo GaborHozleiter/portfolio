@@ -10,14 +10,14 @@ import { Component } from '@angular/core';
 })
 export class PortfolioProjectComponent {
     
-    containerOpacity = false;
+    contPositionHide = true;
     
   
   animation1(){
-      this.containerOpacity = true;
+      this.contPositionHide = false;
     }
 
     animation2(){
-      this.containerOpacity = false;
+      this.contPositionHide = true;
     }
 }
