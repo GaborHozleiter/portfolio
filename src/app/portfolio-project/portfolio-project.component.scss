@@ -28,6 +28,11 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    opacity: 0;
+}
+
+.opacity {
+    opacity: 1;
 }
 
 .portfolio-number {

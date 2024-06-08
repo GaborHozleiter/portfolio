@@ -1,8 +1,8 @@
-<div class="portfolio-project-cont">
+<div class="portfolio-project-cont" (mouseover)="animation1()" (mouseout)="animation2()">
     <div class="portfolio-project portfolio-background">
 
     </div>
-    <div class="portfolio-description-cont">
+    <div class="portfolio-description-cont" [ngClass]="{'opacity' : containerOpacity}">
         <div class="portfolio-number portfolio-number-position1">
             <span class="">01/05</span>
         </div> 
