@@ -1,0 +1,16 @@
+.contact-cont {
+    height: 100vh;
+    position: relative;
+    background-color: greenyellow;
+    width: 1920px;
+}
+
+@media(max-width:1920px){
+.contact-cont {
+    width: 100vw;
+    max-width: 100%;
+}
+
+    
+
+}
