@@ -8,7 +8,7 @@
         <div class="portfolio-number portfolio-number-position1">
             <span class="">01/05</span>
         </div> 
-        <div class="moved-cont"   [ngClass]="{'cont-move' : !contPositionHide}">
+        <div class="moved-cont" [ngClass]="{'cont-move' : !contPositionHide , 'cont-remove' : contPositionHide}">
             <div class="portfolio-description">
                 <div>
                     <span class="portfolio-description-title">Join</span>
@@ -17,13 +17,20 @@
                     <span class="portfolio-description-skills">Angular | TypeScript | HTML | CSS |Firebase</span>
                 </div>
                 <div>
-                    <span class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
-                        users and categories.
-                    </span>
+                    <div class="description-cont">
+                        <span class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
+                            users and categories.
+                        </span>
+                    </div>
+                    
                 </div>
-                <div>
-                    <button>Live test</button>
-                    <button>Github</button>
+                <div class="button-cont">
+                    <div>
+                        <button class="contact-button"><span class="button-text">Live test</span></button>
+                    </div>
+                    <div>
+                        <button class="contact-button"><span class="button-text">Github</span></button>
+                    </div>
                 </div>
             </div>
         </div>
