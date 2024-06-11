@@ -47,12 +47,13 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .contactform {
     width: 100%;
     height: 600px;
-    background-color: red;
+    background-color: black;
 }
 
 .contactform-question {

@@ -1,21 +1,24 @@
-<div class="cont">
+<div class="contactform-cont">
     <form (ngSubmit)="onSubmit()">
         <div>
             <label for="name"></label>
-            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
+            <input class="name-input"[(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
+            <div class="underline-name"></div>
         </div>
         <div>
             <label for="email"></label>
-            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required>
+            <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required>
+            <div class="underline-email"></div>
         </div>
         <div>
             <label for="message"></label>
             <textarea [(ngModel)]="contactData.message" id="message" name="message" 
             placeholder="Your message" required></textarea>
+            <div class="underline-message"></div>
         </div>
         <div>
             <input type="submit" value="">
-        </div>
+        </div> 
         
 
         
