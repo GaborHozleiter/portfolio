@@ -2,7 +2,8 @@
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 input, textarea{
@@ -97,4 +98,38 @@ textarea {
     width: 675px;
     height: 2px;
     background-color: #FFFCF3;
+}
+
+span {
+    font-family: 'Overpass';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #FFFCF3;
+}
+
+a {
+    text-decoration: none;
+    font-family: Overpass;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #00BC8F;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.privacy-policy-cont {
+    display: flex;
+}
+
+.green-text-cont {
+    width: 99px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,28 +1,51 @@
 <div class="contactform-cont">
-    <form (ngSubmit)="onSubmit()">
-        <div>
-            <label for="name"></label>
-            <input class="name-input"[(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required
-            (click)="nameInputActive()" [ngClass]="{'activeNameInput' : nameInputfieldActive }">
-            <div class="hide-title-name"><span class="hide-title">Your name</span></div>
-            <div class="underline-name"></div>
-        </div>
-        <div>
-            <label for="email"></label>
-            <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required>
-            <div class="underline-email"></div>
-        </div>
-        <div>
-            <label for="message"></label>
-            <textarea [(ngModel)]="contactData.message" id="message" name="message" 
-            placeholder="Your message" required></textarea>
-            <div class="underline-message"></div>
-        </div>
-        <div>
-            <input type="submit" value="">
-        </div> 
-        
+    <div>
+        <form (ngSubmit)="onSubmit()">
+            <div>
+                <label for="name"></label>
+                <input class="name-input" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="Your name" required (click)="nameInputActive()"
+                    [ngClass]="{'activeNameInput' : nameInputfieldActive }">
+                <div class="hide-title-name"><span class="hide-title">Your name</span></div>
+                <div class="underline-name"></div>
+            </div>
+            <div>
+                <label for="email"></label>
+                <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Your email" required>
+                <div class="hide-title-email"><span class="hide-title">Your email</span></div>
+                <div class="underline-email"></div>
+            </div>
+            <div>
+                <label for="message"></label>
+                <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message"
+                    required></textarea>
+                <div class="underline-message"></div>
+            </div>
+            <div>
+                <input type="submit" value="">
+            </div>
+        </form>
+    </div>
 
-        
-    </form>
+    <div>
+        <div class="privacy-policy-cont">
+            <div>
+                <img src="../../assets/img/check_box.png">
+            </div>
+            <div>
+                <span>I've read the</span>
+            </div>
+            <div class="green-text-cont">
+                <a href="">privacy policy</a>
+            </div>
+            <div>
+                <span>and agree to the processing of my data as outlined.</span>
+            </div>
+            
+        </div>
+        <div>
+            <button>Send message</button>
+        </div>
+    </div>
 </div>
