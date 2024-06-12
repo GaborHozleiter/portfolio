@@ -11,8 +11,11 @@ input, textarea{
 }
 
 input::placeholder, textarea::placeholder {
-    font-weight: bold;
-    opacity: 0.5;
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
     color: #FFFCF3;
 }
 
@@ -22,6 +25,7 @@ input::placeholder, textarea::placeholder {
     border: 4px solid black;
     padding: 4px 25px;
     margin-bottom: 10px;
+    color: #FFFCF3;
     cursor: pointer;
     &:hover {
         border: 4px solid #FFFCF3;
@@ -32,8 +36,11 @@ textarea {
     width: 617px;
     height: 200px;
     border: 4px solid black;
-    padding: 4px 25px;
-    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 4px;
+    padding-top: 12px;
+    color: #FFFCF3;
     cursor: pointer;
     &:hover {
         border: 4px solid #FFFCF3;
@@ -58,7 +65,7 @@ textarea {
 
 .underline-message {
     position: absolute;
-    top: 350px;
+    top: 356px;
     width: 675px;
     height: 2px;
     background-color: #FFFCF3;
