@@ -2,7 +2,9 @@
     <form (ngSubmit)="onSubmit()">
         <div>
             <label for="name"></label>
-            <input class="name-input"[(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
+            <input class="name-input"[(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required
+            (click)="nameInputActive()" [ngClass]="{'activeNameInput' : nameInputfieldActive }">
+            <div class="hide-title-name"><span class="hide-title">Your name</span></div>
             <div class="underline-name"></div>
         </div>
         <div>
