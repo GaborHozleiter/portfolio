@@ -20,6 +20,7 @@
                 <label for="message"></label>
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message"
                     required></textarea>
+                <div class="hide-title-message"><span class="hide-title">Your message</span></div>
                 <div class="underline-message"></div>
             </div>
             <div>
@@ -27,8 +28,7 @@
             </div>
         </form>
     </div>
-
-    <div>
+    <div class="bottom-cont">
         <div class="privacy-policy-cont">
             <div>
                 <img src="../../assets/img/check_box.png">
@@ -42,10 +42,12 @@
             <div>
                 <span>and agree to the processing of my data as outlined.</span>
             </div>
-            
         </div>
         <div>
-            <button>Send message</button>
+            <button class="send-message-btn">Send message</button>
         </div>
+    </div>
+    <div class="arrow-top-cont">
+        <img src="../../assets/img/arrow_top.png">
     </div>
 </div>
