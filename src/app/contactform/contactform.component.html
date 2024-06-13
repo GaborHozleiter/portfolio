@@ -12,7 +12,7 @@
             <div>
                 <label for="email"></label>
                 <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your email" required>
+                    placeholder="Your email" required (click)="emailInputActive()" [ngClass]="{'activeNameInput' : emailInputfieldActive }">
                 <div class="hide-title-email"><span class="hide-title">Your email</span></div>
                 <div class="underline-email"></div>
             </div>
