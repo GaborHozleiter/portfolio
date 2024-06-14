@@ -13,26 +13,32 @@
 </nav>
 <div class="opened-menu" [ngClass]="{'d-flex': openedMenu}">
     <div class="animation-cont" (click)="closeMenu()">
-        <a href="#about-me"><span class="menu-item">About me</span></a>
+        <a href="#about-me">
+            <span class="menu-item">About me</span>
+        </a>
         <div class="underline"></div>
     </div>
     <div class="animation-cont" (click)="closeMenu()">
-        <span class="menu-item">My Skills</span>
+        <a href="#my-skills">
+            <span class="menu-item">My Skills</span>
+        </a>
         <div class="underline"></div>
     </div>
     <div class="animation-cont" (click)="closeMenu()">
-        <span class="menu-item" >Portfolio</span>
+        <a href="#portfolio">
+            <span class="menu-item" >Portfolio</span>
+        </a>
         <div class="underline"></div>
     </div>
     <div class="change-language">
-        <div class="animation-cont" (click)="closeMenu()">
+        <div class="animation-cont" (click)="closeMenu(); changeGerman()">
             <span class="menu-item">de</span>
             <div class="underline"></div>
         </div>
         <div>
             <span class="menu-item">|</span>
         </div>
-        <div class="animation-cont" (click)="closeMenu()">
+        <div class="animation-cont" (click)="closeMenu(); changeEnglish()">
             <span class="menu-item">en</span>
             <div class="underline"></div>
         </div> 

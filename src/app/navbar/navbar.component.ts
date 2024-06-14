@@ -19,7 +19,11 @@ export class NavbarComponent {
       this.openedMenu = false;
     }
 
-    borderAnimation() {
-      alert('sdfhx');
+    changeGerman(){
+      alert('de');
+    }
+
+    changeEnglish(){
+      alert('en');
     }
 }
