@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { setInterval } from 'timers/promises';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,22 +13,6 @@ export class LandingPageComponent implements OnInit {
     arrowNumber:number = 3;
     email:string = 'hozleitergabor@gmail.com';
 
-    constructor(){
-      //this.xy();
-    }
-
     ngOnInit(): void {
-      
-      
-    }
-
-    xy(){
-      setInterval(() => {
-        if(this.arrowNumber < 5){
-          this.arrowNumber ++;
-        }else{
-          this.arrowNumber = 0;
-        }
-      }, 1000);
-    }
+      }
 }
