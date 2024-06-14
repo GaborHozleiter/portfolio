@@ -56,7 +56,6 @@
     transform: rotate(-90deg);
     position: absolute;
     bottom: 50px;
-    margin-bottom: 100px;
     left: calc((100vw - 1960px) / 2);
 }
 
@@ -80,19 +79,19 @@
 
 .scroll-cont-top {
     position: absolute;
-    bottom: 70px;
+    bottom: -50px;
     right: calc((100vw - 1700px) / 2);
 }
 
 .scroll-cont-bottom {
     position: absolute;
-    bottom: 50px;
+    bottom: -70px;
     right: calc((100vw - 1700px) / 2);
 }
 
 .arrow-cont {
     position: absolute;
-    bottom: 100px;
+    bottom: -20px;
     right: calc((100vw - 1760px) / 2);
 }
 
