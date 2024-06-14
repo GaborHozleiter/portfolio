@@ -117,18 +117,11 @@
         width: 800px;
         height: 300px;
         left: calc(50vw - 400px);
-        top: calc(50vh - 150px);
     }
     
     .intro-profession {
         font-size: 100px;
-        font-weight: 800;
         line-height: 100px;
-    }
-    
-    .intro-name-cont {
-        margin-top: 4px;
-        gap: 16px;
     }
     
     .intro-name {
@@ -138,7 +131,6 @@
     
     .balck-line {
         width: 400px;
-        height: 3px;
     }
 }
 
@@ -147,18 +139,11 @@
         width: 650px;
         height: 300px;
         left: calc(50vw - 325px);
-        top: calc(50vh - 150px);
     }
     
     .intro-profession {
         font-size: 80px;
-        font-weight: 800;
         line-height: 80px;
-    }
-    
-    .intro-name-cont {
-        margin-top: 4px;
-        gap: 16px;
     }
     
     .intro-name {
@@ -168,7 +153,6 @@
     
     .balck-line {
         width: 300px;
-        height: 3px;
     }
 
     .email-cont {
@@ -176,20 +160,14 @@
     }
 
     .scroll-cont-top {
-        position: absolute;
-        bottom: 70px;
         right: 50px;
     }
     
     .scroll-cont-bottom {
-        position: absolute;
-        bottom: 50px;
         right: 50px;
     }
     
     .arrow-cont {
-        position: absolute;
-        bottom: 100px;
         right: 20px;
     }
 }
@@ -199,17 +177,15 @@
         width: 500px;
         height: 300px;
         left: calc(50vw - 250px);
-        top: calc(50vh - 150px);
     }
     
     .intro-profession {
         font-size: 60px;
-        font-weight: 800;
         line-height: 60px;
     }
     
     .intro-name-cont {
-        margin-top: 4px;
+        margin-top: 0px;
         gap: 16px;
     }
     
@@ -220,7 +196,6 @@
     
     .balck-line {
         width: 220px;
-        height: 3px;
     }
 }
 
@@ -229,12 +204,10 @@
         width: 320px;
         height: 300px;
         left: calc(50vw - 160px);
-        top: calc(50vh - 150px);
     }
     
     .intro-profession {
         font-size: 40px;
-        font-weight: 800;
         line-height: 40px;
     }
     
@@ -250,7 +223,6 @@
     
     .balck-line {
         width: 120px;
-        height: 3px;
     }
 }
 
