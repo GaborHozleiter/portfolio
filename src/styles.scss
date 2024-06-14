@@ -1,6 +1,9 @@
+$cream: #FFFCF3;
+$caribbean-green: #00BC8F;
+
 body {
     margin: 0;
-    background-color: #FFFCF3;
+    background-color: $cream;
     display: flex;
     justify-content: center;
 }
@@ -9,6 +12,7 @@ body {
   scroll-behavior: smooth;
   max-width: 100%;
 }
+
 
 /* syne-regular - latin */
 @font-face {
