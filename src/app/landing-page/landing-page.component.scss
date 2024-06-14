@@ -14,7 +14,6 @@
     position: absolute;
     left: calc(50vw - 515px);
     top: calc(50vh - 150px);
-    background-color: aqua;
 }
 
 .intro-profession {
@@ -222,3 +221,34 @@
         height: 3px;
     }
 }
+
+@media(max-width:500px){
+    .intro-cont {
+        width: 320px;
+        height: 300px;
+        left: calc(50vw - 160px);
+        top: calc(50vh - 150px);
+    }
+    
+    .intro-profession {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    
+    .intro-name-cont {
+        margin-top: -4px;
+        gap: 16px;
+    }
+    
+    .intro-name {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    .balck-line {
+        width: 120px;
+        height: 3px;
+    }
+}
+
