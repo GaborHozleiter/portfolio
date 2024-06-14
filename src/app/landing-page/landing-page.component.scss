@@ -226,3 +226,21 @@
     }
 }
 
+@media(max-width:400px){
+    .email-cont {
+        left: -100px;
+    }
+
+    .scroll-cont-top {
+        right: 10px;
+    }
+    
+    .scroll-cont-bottom {
+        right: 10px;
+    }
+    
+    .arrow-cont {
+        right: -22px;
+    }
+}
+
