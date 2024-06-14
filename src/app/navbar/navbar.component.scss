@@ -141,6 +141,15 @@ nav {
     }
 }
 
+@media(max-width:400px){
+    .logo {
+        margin-left: 10px;
+    }
+    .menu-icon {
+        margin-right: 10px;
+    }
+}
+
 @media(max-height:670px){
     .opened-menu {
         scrollbar-width: 5px;
