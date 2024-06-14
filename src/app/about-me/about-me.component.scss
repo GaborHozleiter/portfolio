@@ -1,6 +1,9 @@
+@import '../../styles.scss';
+
 .about-me-cont {
     height: 100vh;
     position: relative;
+    background-color: $cream;
 }
 
 .about-me-text-cont {
