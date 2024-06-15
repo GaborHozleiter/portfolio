@@ -6,18 +6,6 @@
     background-color: $cream;
 }
 
-.arrow-cont {
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    top: 100px;
-    right: calc((100% - 1720px) / 2);
-   background-color: aqua;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
 .skills-icons-cont {
     height: 600px;
     width: 1720px;
@@ -92,9 +80,6 @@
     font-weight: 700;
     line-height: 19.2px;
     text-align: center;
-}
-.arrow {
-    cursor: pointer;
 }
 
 @media(max-width:1920px){
