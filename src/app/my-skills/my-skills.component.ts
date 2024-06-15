@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class MySkillsComponent {
 
+  arrowNumber:number = 1;
+
+  arrowHover(){
+    if(this.arrowNumber < 2){
+      this.arrowNumber++;
+    }else{
+      this.arrowNumber = 1;
+    }
+  }
+
 }

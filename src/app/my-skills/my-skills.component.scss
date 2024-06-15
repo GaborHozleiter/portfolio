@@ -11,7 +11,7 @@
     height: 350px;
     position: absolute;
     top: 100px;
-    right: calc((100vw - 1220px) / 2);
+    right: calc((100% - 1720px) / 2);
     background-color: aqua;
     display: flex;
     justify-content: flex-end;
@@ -20,18 +20,18 @@
 
 .skills-icons-cont {
     height: 600px;
-    width: 1250px;
+    width: 1720px;
     position: absolute;
+    position: relative;
     top: 600px;
-    left: calc(50% - 625px);
+    left: calc(50% - 860px);
     border: 4px solid #000000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 170px;
-    row-gap: 0px !important;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
 }
+
 
 .skills-title-cont {
     width: 560px;
@@ -65,15 +65,17 @@
 .skills-icon {
     width: 70px;
     height: 70px;
-    
 }
 
 .icon-cont {
+    z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
+    width: 20%;
+    height: 50%;
     transition: transform 1s;
     transform-style: preserve-3d;
     &:hover {
@@ -90,4 +92,64 @@
     font-weight: 700;
     line-height: 19.2px;
     text-align: center;
+}
+.arrow {
+    cursor: pointer;
+}
+
+@media(max-width:1920px){
+    .skills-icons-cont{
+        width: calc(100vw - 200px);
+        left: 100px;
+    }
+
+    .arrow-cont {
+        right: 100px;
+    }
+}
+
+@media(max-width:1100px){
+    .arrow-cont {
+        left: calc(50vw - 175px);
+    }
+}
+
+@media(max-width:950px){
+    .skills-icons-cont{
+        width: calc(100vw - 100px);
+        left: 50px;
+    }
+
+    .arrow-cont {
+        right: 50px;
+    }
+}
+
+@media(max-width:800px){
+    .icon-cont {
+        width: 25%;
+        height: 30%;
+        margin-top: 10px;
+    }
+
+    .skills-title-cont {
+        width: 520px;
+        left: calc(50% - 260px);
+    }
+}
+
+@media(max-width:700px){
+    .skills-title {
+        font-size: 50px;
+    }
+
+    .skills-title-cont {
+        width: 350px;
+        left: calc(50% - 175px);
+    }
+
+    .skills-icon {
+        width: 60px;
+        height: 60px;
+    }
 }
