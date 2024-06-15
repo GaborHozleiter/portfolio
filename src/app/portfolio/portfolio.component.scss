@@ -7,15 +7,9 @@
 }
 
 .arrow-cont {
-    width: 350px;
-    height: 350px;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 100px ;
-    background-color: aqua;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
     transform: rotateY(180deg);
 }
 
