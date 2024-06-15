@@ -11,7 +11,7 @@
     height: 350px;
     position: absolute;
     top: 150px;
-    right: calc(50vw - 300px) ;
+    left: 100px ;
     background-color: aqua;
     display: flex;
     justify-content: flex-end;
@@ -24,7 +24,7 @@
     height: 160px;
     position: absolute;
     top: 550px;
-    left: calc(50vw - 270px);
+    left: 690px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,5 +64,28 @@
     background-color: aqua;
     position: absolute;
     top: 800px;
-    left: calc(50vw - 860px);
+    left: 100px;
+}
+
+@media(max-width:1920px) {
+    .portfolio-show-cont {
+    width: calc(100% - 200px);
+    }
+
+    .portfolio-title-cont {
+        width: 540px;
+        height: 160px;
+        position: absolute;
+        top: 550px;
+        left: calc(50vw - 270px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        &:hover {
+            .portfolio-title {
+                color: #00BC8F;
+            }
+        }
+    }
 }
