@@ -11,6 +11,25 @@ import { Component } from '@angular/core';
 export class PortfolioProjectComponent {
     
     contPositionHide = true;
+
+    projects = [
+        {
+          name :   'Join',
+          skills : 'Angular | TypeScript | HTML | CSS |Firebase',
+          description : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+          link : '',
+          github : '',
+          number : '01/05'
+        },
+        {
+          name :   'Pollo Loco',
+          skills : 'JavaScript | HTML | CSS',
+          description : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+          link : '',
+          github : '',
+          number : '02/05'
+        }
+    ]
     
   
   animation1(){
