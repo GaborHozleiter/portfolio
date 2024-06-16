@@ -89,10 +89,23 @@
     right: calc((100vw - 1700px) / 2);
 }
 
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .arrow-cont {
     position: absolute;
     bottom: -20px;
     right: calc((100vw - 1760px) / 2);
+    animation: move 1s infinite; 
 }
 
 @media(max-width:1920px){
