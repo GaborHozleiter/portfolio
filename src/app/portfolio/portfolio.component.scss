@@ -122,4 +122,14 @@
         height: 300px;
         left: calc(50vw - 150px);
     }
+
+    .portfolio-title-cont {
+        width: calc(100vw - 20px);
+        left: 10px;
+    }
+
+    .portfolio-show-cont {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
 }
