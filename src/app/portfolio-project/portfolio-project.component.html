@@ -1,5 +1,6 @@
-<div class="portfolio-project-cont" (mouseover)="animation1()" (mouseout)="animation2()" *ngFor="let project of projects; let i = index">
+<div class="portfolio-project-cont" *ngFor="let project of projects; let i = index">
     <div class="portfolio-project portfolio-background">
+        <img src="{{ project.background }}">
         <div class="hovered-border-cont">
             <img class="rotated-arrow" src="../../assets/img/arrow-rotated.png">
         </div>
@@ -8,7 +9,7 @@
         <div class="portfolio-number portfolio-number-position1">
             <span class="">{{ project.number }}</span>
         </div> 
-        <div class="moved-cont" [ngClass]="{'cont-move' : !contPositionHide , 'cont-remove' : contPositionHide}">
+        <div class="moved-cont">
             <div class="portfolio-description">
                 <div>
                     <span class="portfolio-description-title">{{ project.name }}</span>

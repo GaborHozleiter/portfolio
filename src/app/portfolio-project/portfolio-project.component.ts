@@ -21,7 +21,8 @@ export class PortfolioProjectComponent {
           github : '',
           number : '01/05',
           testLink : '#',
-          githubLink : '#'
+          githubLink : '#',
+          background : '../../assets/img/portfolio photos s3.png'
         },
         {
           name :   'Pollo Loco',
@@ -31,16 +32,9 @@ export class PortfolioProjectComponent {
           github : '',
           number : '02/05',
           testLink : '#',
-          githubLink : '#'
+          githubLink : '#',
+          background : '../../assets/img/pollo loco.png'
         }
     ]
     
-  
-  animation1(){
-      this.contPositionHide = false;
-    }
-
-    animation2(){
-      this.contPositionHide = true;
-    }
 }

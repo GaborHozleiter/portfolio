@@ -17,6 +17,21 @@
         .rotated-arrow {
             animation: change-direction 0.5s forwards;
         }
+        .moved-cont {
+            animation: cont-move 0.5s forwards;
+        }
+    }
+}
+
+@keyframes cont-move {
+    0% {
+        transform: translate(0%);
+        transition: 0.25s ease-in-out;
+    }
+    100% {
+        transform: translate(100%);
+        transition: 0.25s ease-in-out;
+        background-color: #00BC8F;
     }
 }
 
@@ -36,10 +51,14 @@
 }
 
 .portfolio-background {
-    background-image: url('../../assets/img/portfolio\ photos\ s3.png');
     object-fit: cover;
     filter:grayscale(1);
     z-index: 2;
+}
+
+img {
+    width: 860px;
+    height: 400px;
 }
 
 .hovered-border-cont {
@@ -70,18 +89,7 @@
     width: 50%;
 }
 
-.cont-move {
-    transform: translate(100%);
-    transition: 0.25s ease-in-out;
-}
-
-.cont-remove {
-    transform: translate(0%);
-    transition: 0.25s ease-in-out;
-}
-
 .portfolio-number {
-    //background-color: green;
     width: 100%;
     span {
         font-family: 'Syne';
@@ -97,8 +105,9 @@
 }
 
 .moved-cont {
-    width: 100%;
+    width: 860px;
     height: 300px;
+    position: relative;
 }
 
 .portfolio-description {
