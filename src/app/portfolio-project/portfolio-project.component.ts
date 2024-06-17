@@ -19,7 +19,9 @@ export class PortfolioProjectComponent {
           description : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
           link : '',
           github : '',
-          number : '01/05'
+          number : '01/05',
+          testLink : '#',
+          githubLink : '#'
         },
         {
           name :   'Pollo Loco',
@@ -27,7 +29,9 @@ export class PortfolioProjectComponent {
           description : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
           link : '',
           github : '',
-          number : '02/05'
+          number : '02/05',
+          testLink : '#',
+          githubLink : '#'
         }
     ]
     

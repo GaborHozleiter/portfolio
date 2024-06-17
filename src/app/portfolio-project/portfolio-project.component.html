@@ -1,4 +1,4 @@
-<div class="portfolio-project-cont" (mouseover)="animation1()" (mouseout)="animation2()">
+<div class="portfolio-project-cont" (mouseover)="animation1()" (mouseout)="animation2()" *ngFor="let project of projects; let i = index">
     <div class="portfolio-project portfolio-background">
         <div class="hovered-border-cont">
             <img class="rotated-arrow" src="../../assets/img/arrow-rotated.png">
@@ -6,30 +6,36 @@
     </div>
     <div class="portfolio-description-cont">
         <div class="portfolio-number portfolio-number-position1">
-            <span class="">01/05</span>
+            <span class="">{{ project.number }}</span>
         </div> 
         <div class="moved-cont" [ngClass]="{'cont-move' : !contPositionHide , 'cont-remove' : contPositionHide}">
             <div class="portfolio-description">
                 <div>
-                    <span class="portfolio-description-title">Join</span>
+                    <span class="portfolio-description-title">{{ project.name }}</span>
                 </div>
                 <div>
-                    <span class="portfolio-description-skills">Angular | TypeScript | HTML | CSS |Firebase</span>
+                    <span class="portfolio-description-skills">{{ project.skills }}</span>
                 </div>
                 <div>
                     <div class="description-cont">
-                        <span class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
-                            users and categories.
-                        </span>
+                        <span class="description">{{ project.description }}</span>
                     </div>
                     
                 </div>
                 <div class="button-cont">
                     <div>
-                        <button class="contact-button"><span class="button-text">Live test</span></button>
+                        <a href="{{ project.testLink }}">
+                            <button class="contact-button">
+                                <span class="button-text">Live test</span>
+                            </button>
+                        </a>
                     </div>
                     <div>
-                        <button class="contact-button"><span class="button-text">Github</span></button>
+                        <a href="{{ project.githubLink }}">
+                            <button class="contact-button">
+                                <span class="button-text">Github</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
