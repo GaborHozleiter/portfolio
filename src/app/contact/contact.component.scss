@@ -1,12 +1,12 @@
 .contact-cont {
-    height: 1150px;
+    height: 1850px;
     position: relative;
+    background-color: greenyellow;
 }
 
 .aslant-bg-cont {
     position: absolute;
-    left: calc((100vw - 1920px) / 2);
-    width: 1920px;
+    left: 0;
     top: 0;
 }
 
@@ -16,9 +16,10 @@
 
 .say-hi-cont {
     position: absolute;
-    left: calc(50vw - 250px);
+    left: 60px;
     width: 500px;
     height: 100px;
+    background-color: red;
     top: 200px;
     display: flex;
     justify-content: center;
@@ -33,7 +34,6 @@
     letter-spacing: 0.01em;
     text-align: center;
     color: #FFFCF3;
-
 }
 
 .contactform-cont {
@@ -41,8 +41,8 @@
     width: 1000px;
     height: 800px;
     top: 400px;
-    left: calc(50vw - 500px);
-    //background-color: green;
+    left: 460px;
+    background-color: green;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,11 +75,66 @@
 }
 
 @media(max-width:1920px){
-.contact-cont {
-    width: 100vw;
-    max-width: 100%;
+    .contact-cont {
+        width: 100vw;
+        max-width: 100%;
+        }
+
+    .aslant-bg {
+        width: 100vw;
+        }
+
+    .contactform-cont {
+        left: calc(50% - 500px);
+    }
 }
 
-    
+@media(max-width:1200px){
+    .contactform-cont {
+        width: calc(100vw - 200px);
+        left: 100px;
+    }
+}
 
+@media(max-width:950px){
+    .say-hi-cont {
+        width: 450px;
+        height: 90px;
+        left: 40px;
+    }
+}
+
+@media(max-width:700px){
+    .say-hi {
+        font-size: 50px;
+    }
+    .say-hi-cont {
+        width: 350px;
+        height: 70px;
+        left: 10px;
+     }
+}
+
+@media(max-width:660px){
+    .contactform-question-cont {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:530px){
+    .say-hi {
+        font-size: 40px;
+    }
+    .say-hi-cont {
+        width: 250px;
+        height: 60px;
+        left: 35px;
+     }
+}
+
+@media(max-width:400px){
+    .say-hi-cont {
+        left: 0px;
+     }
 }
