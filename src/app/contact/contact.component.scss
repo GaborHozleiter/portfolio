@@ -1,7 +1,9 @@
+@import '../../styles.scss';
+
 .contact-cont {
     height: 1414px;
     position: relative;
-    background-color: greenyellow;
+    background-color: $cream;
 }
 
 .aslant-bg-cont {
@@ -20,7 +22,7 @@
     left: 60px;
     width: 500px;
     height: 100px;
-    top: 200px;
+    top: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -40,7 +42,7 @@
     position: absolute;
     width: 1000px;
     height: 800px;
-    top: 400px;
+    top: 550px;
     left: 460px;
     background-color: green;
     display: flex;
