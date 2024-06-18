@@ -1,9 +1,12 @@
+@import '../../styles.scss';
+
 .contactform-cont {
     position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 input, textarea{
@@ -196,4 +199,15 @@ a {
 
 img {
     cursor: pointer;
+}
+
+.required-name {
+    color: $alert;
+    font-size: 12px;
+}
+
+.name-error-cont {
+    position: absolute;
+    top: 15px;
+    right: 180px;
 }
