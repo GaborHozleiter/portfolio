@@ -83,7 +83,7 @@ input::placeholder, textarea::placeholder, .hide-title {
     height: 20px;
     background-color: black;
     white-space: nowrap;
-    top: 129px;
+    top: 209px;
     left: 186px;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ textarea {
 
 .underline-message {
     position: absolute;
-    top: 356px;
+    top: 436px;
     width: 675px;
     height: 2px;
     background-color: #FFFCF3;
@@ -154,6 +154,8 @@ a {
 
 .privacy-policy-cont {
     display: flex;
+    width: 680px;
+    margin-bottom: 32px;
 }
 
 .green-text-cont {
@@ -168,6 +170,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 16px;
 }
 
 .send-message-btn {
@@ -193,7 +196,7 @@ a {
     height: 76px;
     position: absolute;
     right: 0;
-    top: 450px;
+    top: 520px;
     cursor: pointer;
 }
 
@@ -216,6 +219,11 @@ img {
     top: 170px;
 }
 
+.required-message-cont {
+    position: absolute;
+    top: 445px;
+}
+
 .name-error-cont {
     position: absolute;
     top: 15px;
@@ -225,5 +233,11 @@ img {
 .email-error-cont {
     position: absolute;
     top: 125px;
+    right: 180px;
+}
+
+.message-error-cont {
+    position: absolute;
+    top: 230px;
     right: 180px;
 }
