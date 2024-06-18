@@ -28,7 +28,7 @@ input::placeholder, textarea::placeholder, .hide-title {
     height: 42px;
     border: 4px solid black;
     padding: 4px 25px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     color: #FFFCF3;
     cursor: pointer;
     outline: none;
@@ -70,7 +70,7 @@ input::placeholder, textarea::placeholder, .hide-title {
     height: 20px;
     background-color: black;
     white-space: nowrap;
-    top: 61px;
+    top: 101px;
     left: 186px;
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@ textarea {
 
 .underline-email {
     position: absolute;
-    top: 122px;
+    top: 162px;
     width: 675px;
     height: 2px;
     background-color: #FFFCF3;
@@ -201,13 +201,29 @@ img {
     cursor: pointer;
 }
 
-.required-name {
+.required {
     color: $alert;
     font-size: 12px;
+}
+
+.required-name-cont {
+   position: absolute;
+   top: 60px;
+}
+
+.required-email-cont {
+    position: absolute;
+    top: 170px;
 }
 
 .name-error-cont {
     position: absolute;
     top: 15px;
+    right: 180px;
+}
+
+.email-error-cont {
+    position: absolute;
+    top: 125px;
     right: 180px;
 }

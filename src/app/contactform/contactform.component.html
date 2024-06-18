@@ -8,21 +8,28 @@
                     [ngClass]="{'activeNameInput' : nameInputfieldActive }">
                 <div class="hide-title-name"><span class="hide-title">Your name</span></div>
                 <div class="underline-name"></div>
-                <div>
-                    <span class="required-name">Your name is required</span>
+                <div class="required-name-cont">
+                    <span class="required">Your name is required</span>
                 </div>
                 <div class="name-error-cont">
                     <img src="../../assets/img/error.png">
                 </div>
             </div>
-            <!--
             <div>
                 <label for="email"></label>
                 <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="Your email" required (click)="emailInputActive()" [ngClass]="{'activeNameInput' : emailInputfieldActive }">
                 <div class="hide-title-email"><span class="hide-title">Your email</span></div>
                 <div class="underline-email"></div>
+                <div class="required-email-cont">
+                    <span class="required">Your email is required</span>
+                </div>
+                <div class="email-error-cont">
+                    <img src="../../assets/img/error.png">
+                </div>
             </div>
+            <!--
+            
             <div>
                 <label for="message"></label>
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message"
