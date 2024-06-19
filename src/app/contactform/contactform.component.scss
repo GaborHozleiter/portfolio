@@ -41,11 +41,48 @@ input::placeholder, textarea::placeholder, .hide-title {
     width: 623px;
     height: 42px;
     padding: 4px 25px;
-    margin-bottom: 12px;
+    margin-bottom: 53px;
     margin-top: 2px;
     color: #FFFCF3;
     cursor: pointer;
     border: 2px solid #FFFCF3;
+    .required-name-cont {
+        top: 56px;
+     }
+    &:hover {
+        border: 2px solid #FFFCF3;
+    }
+}
+
+.activeEmailInput {
+    width: 623px;
+    height: 42px;
+    padding: 4px 25px;
+    margin-bottom: 47.5px;
+    margin-top: 2px;
+    color: #FFFCF3;
+    cursor: pointer;
+    border: 2px solid #FFFCF3;
+    .required-name-cont {
+        top: 56px;
+     }
+    &:hover {
+        border: 2px solid #FFFCF3;
+    }
+}
+
+.activeMessageInput {
+    width: 623px;
+    min-height: 172px;
+    padding: 4px 25px;
+    margin-bottom: 52px;
+    margin-top: 2px;
+    color: #FFFCF3;
+    cursor: pointer;
+    border: 2px solid #FFFCF3;
+    .required-name-cont {
+        top: 56px;
+     }
     &:hover {
         border: 2px solid #FFFCF3;
     }
@@ -241,3 +278,30 @@ img {
     top: 230px;
     right: 180px;
 }
+
+@media(max-width:1200px){
+    .hide-title-name, .hide-title-email, .hide-title-message {
+        left: calc(50vw - 413px);
+    }
+
+    .name-error-cont, .email-error-cont, .message-error-cont{
+        right: calc((100vw - 846px) / 2);
+    }
+}
+
+@media(max-width:950px){
+    .hide-title-name, .hide-title-email, .hide-title-message {
+        left: calc(50vw - 363px);
+    }
+
+    .name-error-cont, .email-error-cont, .message-error-cont{
+        right: calc((100vw - 746px) / 2);
+    }
+}
+
+@media(max-width:780px){
+    .underline-name, .underline-email, .underline-message {
+        width: calc(100vw - 92px);
+    }
+}
+

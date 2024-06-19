@@ -18,7 +18,7 @@
             <div>
                 <label for="email"></label>
                 <input class="email-input" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your email" required (click)="emailInputActive()" [ngClass]="{'activeNameInput' : emailInputfieldActive }">
+                    placeholder="Your email" required (click)="emailInputActive()" [ngClass]="{'activeEmailInput' : emailInputfieldActive }">
                 <div class="hide-title-email"><span class="hide-title">Your email</span></div>
                 <div class="underline-email"></div>
                 <div class="required-email-cont">
@@ -31,7 +31,7 @@
             <div>
                 <label for="message"></label>
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message"
-                    required></textarea>
+                    required (click)="messageInputActive()" [ngClass]="{'activeMessageInput' : messageInputfieldActive }"></textarea>
                 <div class="hide-title-message"><span class="hide-title">Your message</span></div>
                 <div class="underline-message"></div>
             </div>
@@ -66,6 +66,8 @@
         </div>
     </div>
     <div class="arrow-top-cont">
-        <img src="../../assets/img/arrow_top.png">
+        <a href="#landing-page">
+            <img src="../../assets/img/arrow_top.png">
+        </a>
     </div>
 </div>

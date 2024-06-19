@@ -18,6 +18,7 @@ export class ContactformComponent {
     }
     nameInputfieldActive = false;
     emailInputfieldActive = false;
+    messageInputfieldActive = false;
 
     onSubmit(){
       console.log(this.contactData);
@@ -29,6 +30,10 @@ export class ContactformComponent {
 
     emailInputActive(){
       this.emailInputfieldActive = true;
+    }
+
+    messageInputActive(){
+      this.messageInputfieldActive = true;
     }
 
 }
