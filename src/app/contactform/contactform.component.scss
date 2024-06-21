@@ -187,6 +187,7 @@ a {
     color: #00BC8F;
     &:hover {
         font-weight: bold;
+        margin-right: -4.5px;
     }
 }
 
@@ -194,14 +195,7 @@ a {
     display: flex;
     width: 680px;
     margin-bottom: 32px;
-}
-
-.green-text-cont {
-    width: 99px;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 4px;
 }
 
 .bottom-cont {
@@ -216,10 +210,10 @@ a {
     height: 68px;
     padding: 20px 60px 20px 60px;
     gap: 10px;
-    border: 4px solid #BBBBBB;
+    border: 4px solid #383838;
     opacity: 0.3px;
     background-color: black;
-    color: #BBBBBB;
+    color: #383838;
     font-family: 'Overpass';
     font-size: 23px;
     font-weight: 400;
@@ -327,6 +321,6 @@ img {
         right: 25px;
     }
     .hide-title-name, .hide-title-email, .hide-title-message {
-        left: 24px;
+        left: 32px;
     }
 }
