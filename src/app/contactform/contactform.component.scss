@@ -10,6 +10,7 @@
 }
 
 input, textarea{
+    //background-color: greenyellow;
     background-color: black;
     border: none;
 }
@@ -301,7 +302,31 @@ img {
 
 @media(max-width:780px){
     .underline-name, .underline-email, .underline-message {
-        width: calc(100vw - 92px);
+        width: calc(100vw - 142px);
+    }
+    .name-input, .email-input, textarea {
+        width: calc(100vw - 200px);
+    }
+    .name-error-cont, .email-error-cont, .message-error-cont{
+        right: 35px;
+    }
+    .hide-title-name, .hide-title-email, .hide-title-message {
+        left: 43px;
+    }
+}
+
+@media(max-width:400px){
+    .underline-name, .underline-email, .underline-message {
+        width: calc(100vw - 42px);
+    }
+    .name-input, .email-input, textarea {
+        width: calc(100vw - 100px);
+    }
+    .name-error-cont, .email-error-cont, .message-error-cont{
+        right: 25px;
+    }
+    .hide-title-name, .hide-title-email, .hide-title-message {
+        left: 36px;
     }
 }
 
