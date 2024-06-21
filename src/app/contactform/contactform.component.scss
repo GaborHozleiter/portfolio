@@ -274,6 +274,17 @@ img {
     right: 180px;
 }
 
+.accept-policy {
+    font-size: 12px;
+    color: #E61C40;
+}
+
+.accept-policy-cont {
+    position: absolute;
+    top: 505px;
+    left: 160px;
+}
+
 @media(max-width:1200px){
     .hide-title-name, .hide-title-email, .hide-title-message {
         left: calc(50vw - 413px);
@@ -281,6 +292,12 @@ img {
 
     .name-error-cont, .email-error-cont, .message-error-cont{
         right: calc((100vw - 846px) / 2);
+    }
+
+    .accept-policy-cont {
+        position: absolute;
+        top: 505px;
+        left: calc(50vw - 435px);
     }
 }
 
@@ -291,6 +308,12 @@ img {
 
     .name-error-cont, .email-error-cont, .message-error-cont{
         right: calc((100vw - 746px) / 2);
+    }
+
+    .accept-policy-cont {
+        position: absolute;
+        top: 505px;
+        left: calc(50vw - 385px);
     }
 }
 
@@ -307,6 +330,20 @@ img {
     .hide-title-name, .hide-title-email, .hide-title-message {
         left: 33px;
     }
+
+    .accept-policy-cont {
+        left: 0px;
+    }
+}
+
+@media(max-width:615px){
+    .arrow-top-cont{
+        display: none;
+    }
+
+    .accept-policy-cont {
+        top: 515px;
+    }
 }
 
 @media(max-width:400px){
@@ -318,9 +355,16 @@ img {
         left: 10px;
     }
     .name-error-cont, .email-error-cont, .message-error-cont{
-        right: 25px;
+        right: 38px;
     }
     .hide-title-name, .hide-title-email, .hide-title-message {
-        left: 32px;
+        left: 43px;
+    }
+    .privacy-policy-cont {
+        max-width: 80vw;
+    }
+
+    .accept-policy-cont {
+        left: 25px;
     }
 }
