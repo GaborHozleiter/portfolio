@@ -74,8 +74,8 @@ input::placeholder, textarea::placeholder, .hide-title {
 
 .activeMessageInput {
     width: 623px;
-    height: 208px;
-    padding: 4px 25px;
+    height: 184px;
+    padding: 16px 25px;
     margin-bottom: 2px;
     margin-top: 2px;
     color: #FFFCF3;
@@ -302,31 +302,31 @@ img {
 
 @media(max-width:780px){
     .underline-name, .underline-email, .underline-message {
-        width: calc(100vw - 142px);
+        width: calc(100vw - 124px);
     }
     .name-input, .email-input, textarea {
-        width: calc(100vw - 200px);
-    }
-    .name-error-cont, .email-error-cont, .message-error-cont{
-        right: 35px;
-    }
-    .hide-title-name, .hide-title-email, .hide-title-message {
-        left: 43px;
-    }
-}
-
-@media(max-width:400px){
-    .underline-name, .underline-email, .underline-message {
-        width: calc(100vw - 42px);
-    }
-    .name-input, .email-input, textarea {
-        width: calc(100vw - 100px);
+        width: calc(100vw - 176px) !important;
     }
     .name-error-cont, .email-error-cont, .message-error-cont{
         right: 25px;
     }
     .hide-title-name, .hide-title-email, .hide-title-message {
-        left: 36px;
+        left: 33px;
     }
 }
 
+@media(max-width:400px){
+    .underline-name, .underline-email, .underline-message {
+        width: calc(100vw - 68px);
+    }
+    .name-input, .email-input, textarea {
+        width: calc(100vw - 120px) !important;
+        left: 10px;
+    }
+    .name-error-cont, .email-error-cont, .message-error-cont{
+        right: 25px;
+    }
+    .hide-title-name, .hide-title-email, .hide-title-message {
+        left: 24px;
+    }
+}
