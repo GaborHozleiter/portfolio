@@ -1,21 +1,24 @@
+@import '../../styles.scss';
+
 footer {
     width: 1920px;
     position: absolute;
     left: calc((100vw - 1920px)/2);
-    height: 300px;
-    background-color: greenyellow;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
+    height: 120px;
+    background-color: black;
 }
 
 .logo {
     font-size: 36px;
     margin-left: 100px;
     font-family: 'Syne';
-    font-weight: bolder;
-    cursor: pointer;
-    color: #FFFCF3;
+    color: $cream;
+    font-weight: 900;
+    cursor: default;
+    &:hover {
+        color: $caribbean-green;
+        cursor: default;
+    }
 }
 
 .copyright {
@@ -28,10 +31,30 @@ footer {
     margin-left: 100px;
 }
 
-.footer-left {
+.logo-cont {
+    position: absolute;
+    left: -10px;
+    top: 16px;
+}
+
+.copyright-cont {
+    position: absolute;
+    left: -10px;
+    top: 70px;
+}
+
+.icons-cont {
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    right: 100px;
+    top: 16px;
+    gap: 32px;
+}
+
+.legal-notice-cont {
+    position: absolute;
+    right: 100px;
+    top: 75px;
 }
 
 .legal-notice {
@@ -41,4 +64,46 @@ footer {
     line-height: 19.2px;
     text-align: left;
     color: #FFFCF3;
+}
+
+@media(max-width:1920px){
+    footer {
+        width: 100vw;
+        max-width: 100vw;
+        left: 0;
+    }
+}
+
+@media(max-width:615px){
+    footer {
+        height: 180px;
+    }
+
+    .icons-cont {
+       left: calc(50vw - 92px);
+       top: 0;
+    }
+
+    .logo-cont {
+        left: calc(50vw - 67px);
+        top: 50px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .copyright-cont {
+       left: calc(50vw - 112px);
+       top: 105px;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+    .legal-notice-cont {
+       left: calc(50vw - 44px);
+       top: 145px;
+    }
 }
