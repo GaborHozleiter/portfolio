@@ -15,6 +15,24 @@ body {
   max-width: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $cream;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $caribbean-green;
+}
+
+
 
 /* syne-regular - latin */
 @font-face {
