@@ -4,6 +4,7 @@
     background-color: $cream;
     height: 460px;
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,13 +26,12 @@
 
 @keyframes cont-move {
     0% {
-        transform: translate(0%);
+        transform: translateX(0%);
         transition: 0.25s ease-in-out;
     }
     100% {
-        transform: translate(100%);
+        transform: translateX(100%);
         transition: 0.25s ease-in-out;
-        background-color: #00BC8F;
     }
 }
 
@@ -57,7 +57,7 @@
 }
 
 img {
-    width: 860px;
+    width: 100%;
     height: 400px;
 }
 
@@ -105,14 +105,13 @@ img {
 }
 
 .moved-cont {
-    width: 860px;
+    width: 100%;
     height: 300px;
     position: relative;
 }
 
 .portfolio-description {
     transform: translateX(-100%);
-    //background-color: greenyellow;
     display: flex;
     align-items: center;
     flex-direction: column;

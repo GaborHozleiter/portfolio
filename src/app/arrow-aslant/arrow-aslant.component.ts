@@ -12,10 +12,8 @@ export class ArrowAslantComponent {
   arrowNumber:number = 1;
 
   arrowHover(){
-    if(this.arrowNumber < 2){
+    if(this.arrowNumber == 1){
       this.arrowNumber++;
-    }else{
-      this.arrowNumber = 1;
     }
   }
 }

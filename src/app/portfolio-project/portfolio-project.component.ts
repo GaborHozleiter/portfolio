@@ -15,7 +15,7 @@ export class PortfolioProjectComponent {
     projects = [
         {
           name :   'Join',
-          skills : 'Angular | TypeScript | HTML | CSS |Firebase',
+          skills : 'JavaScript | HTML | CSS | Firebase',
           description : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
           link : '',
           github : '',
@@ -26,7 +26,7 @@ export class PortfolioProjectComponent {
         },
         {
           name :   'Pollo Loco',
-          skills : 'JavaScript | HTML | CSS',
+          skills : 'JavaScript | HTML | OOP | CSS',
           description : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
           link : '',
           github : '',
