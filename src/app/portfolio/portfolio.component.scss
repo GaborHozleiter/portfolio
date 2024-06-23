@@ -90,6 +90,12 @@
     }
 }
 
+@media(max-width:1200px){
+    .portfolio-cont {
+        height: 2100px;
+    }
+}
+
 @media(max-width:1100px){
     .arrow-cont {
         left: calc(50vw - 175px);

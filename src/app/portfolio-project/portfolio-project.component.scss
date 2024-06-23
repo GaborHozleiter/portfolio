@@ -82,6 +82,7 @@ img {
 }
 
 .portfolio-description-cont {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +93,7 @@ img {
 
 .portfolio-number {
     width: 100%;
+    position: absolute;
     span {
         font-family: 'Syne';
         font-size: 48px;
@@ -106,6 +108,7 @@ img {
 }
 
 .moved-cont {
+    top: 100px;
     width: 100%;
     height: 300px;
     position: relative;
@@ -192,6 +195,10 @@ a {
 }
 
 @media(max-width:1400px){
+    .moved-cont {
+        top: 0px;
+    }
+
     .portfolio-project-cont {
         flex-direction: column;
         align-items: center;
@@ -204,6 +211,37 @@ a {
         width: 100%;
         height: 330px;
         background-color: red;
+        margin-top: 50px;
+    }
+
+    .portfolio-number {
+        margin-top: -440px;
+    }
+}
+
+@media(max-width:1200px){
+    .portfolio-project {
+        height: 300px;
+    }
+
+    img {
+        height: 300px;
+    }
+
+    .hovered-border-cont {
+        height: 300px;
+    }
+
+    .portfolio-description-cont {
+        height: 250px;
+    }
+
+    .portfolio-number {
+        margin-top: -365px;
+    }
+
+    .portfolio-project-cont {
+        height: 650px;
     }
 }
 
