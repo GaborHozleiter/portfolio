@@ -5,6 +5,7 @@
     height: 460px;
     width: 100%;
     overflow: hidden;
+    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,7 @@ img {
     left: 20px;
     top: 20px;
     width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    height: 400px;
     z-index: 5;
     border: 5px solid black;
     display: none;
@@ -189,3 +190,59 @@ img {
 a {
     text-decoration: none;
 }
+
+@media(max-width:1400px){
+    .portfolio-project-cont {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 720px;
+    }
+
+    .portfolio-description-cont {
+        justify-content: flex-start;
+        width: 100%;
+        height: 330px;
+        background-color: red;
+    }
+}
+
+/*
+@media(max-width:1500px){
+    img {
+        height: 300px;
+    }
+
+    .hovered-border-cont {
+        height: 300px;
+    }
+
+    .moved-cont {
+    height: 200px;
+    margin-bottom: 200px;
+    }
+
+    .portfolio-number {
+        span {
+            font-size: 36px;
+        }
+    }
+
+    .portfolio-description-title {
+        font-size: 42px;
+    }
+    
+    .portfolio-description-skills {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .portfolio-description {
+        margin-bottom: 20px;
+    }
+}
+*/
+
